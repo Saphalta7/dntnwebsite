@@ -1,0 +1,127 @@
+/*styling body */
+body {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.fig_img {
+  max-width: 100%;
+  height: auto;
+  /*width: 600px; 
+  height: 400px;*/
+}
+
+h1 {
+  text-decoration: 500;
+  animation: slideLeft 3s ease-in;
+  font-size: 2rem;
+}
+
+/* Animation */
+@keyframes slideLeft {
+  0% {
+    transform: translateX(140px);
+  }
+
+  100% {
+    transform: translateX(0px);
+  }
+}
+/* End of animation */
+
+label {
+  display: inline-block;
+}
+
+span {
+  font-style: itallic;
+}
+
+/* Form styles */
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+/* Dark Theme Styles */
+body.dark {
+  background: #0d103b;
+  color: var(--text-color-dark);
+}
+
+.wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /*max-width: 350px;*/
+  max-width: 100%;
+  width: 100%;
+  background: #b18585;
+  padding: 15px;
+  /*padding: 25px;*/
+  border-radius: 5px;
+  box-shadow: 4px 4px 2px hwb(249 23% 47%);
+}
+
+.wrapper h2 {
+  text-align: center;
+  margin-bottom: 10px; /* 20PX*/
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 1.5rem; /*ADJUST*/
+  color: #c5af59;
+}
+
+.wrapper .input_field {
+  margin-bottom: 10px;
+}
+
+.wrapper .input_field input[type="text"],
+.wrapper textarea {
+  border: 1px solid #e0e0e0;
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem; /*ADJUST*/
+}
+
+.wrapper textarea {
+  resize: none;
+  height: 80px;
+}
+
+.wrapper .btn input[type="submit"] {
+  border: 0px;
+  margin-top: 15px;
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+  background: #fece0c;
+  color: #332902;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-weight: bold;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+#error_message {
+  margin-bottom: 10px; /*ADJUST 20PX*/
+  background: #fe8b8e;
+  padding: 5px; /*ADJUST 0PX*/
+  text-align: center;
+  font-size: 0.8rem; /*ADJUST 14PX*/
+  transition: all 0.5s ease;
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper {
+    padding: 10px;
+  }
+}

@@ -1,0 +1,169 @@
+/* Normalizing the webpage */
+
+* {
+  font-weight: 400;
+  scroll-behavior: smooth;
+
+  padding: 0;
+  margin: 0;
+}
+
+/* End of Normalizing the webpage */
+
+/* Setting margin for all tags */
+
+h2,
+p,
+li,
+span,
+div,
+figcaption,
+img {
+  margin: 1rem 0;
+}
+
+/* End of setting margin for all tags */
+
+/* General styling */
+
+header h1 {
+  color: #da7a0df2;
+  font-size: 40pt;
+  margin: 10px 10px;
+  text-shadow: 2px 2px 3px rgb(135, 164, 173);
+  background-color: lightbrown;
+  position: relative;
+}
+
+#navbar {
+  padding: 1rem;
+  background-color: rgb(225, 180, 98);
+}
+
+#nav_items {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.nav_link,
+li {
+  font-weight: 700;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.nav_link:link {
+  color: blue;
+}
+
+.nav_link:visited {
+  color: #222;
+}
+
+.nav_link:hover {
+  color: #0052ff;
+}
+
+.nav_link:active {
+  color: red;
+}
+
+/* nav ul li a.nav_link:first-child {
+    color: red;
+} */
+
+h2#first_letter_capitalize::first-letter {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+h2#first_letter_capitalize {
+  font-weight: 700;
+}
+
+footer {
+  font-style: oblique;
+}
+
+.container {
+  max-width: 80%;
+  margin: auto;
+  padding: 16px;
+}
+
+.banner {
+  height: 500px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-section {
+  float: left;
+  text-align: justify;
+  width: 55%;
+}
+
+/* End of General styling */
+/*Contact Us*/
+.image-section {
+  float: right;
+  width: 40%;
+}
+.image-section img {
+  width: 100%;
+  height: auto;
+}
+
+.accom-image {
+  width: 100%;
+  height: 400px;
+}
+
+/* Blog image*/
+.blog-image {
+  width: 50%;
+}
+
+
+h1 {
+  font-size: 24px;
+  font-weight: bold;
+}
+h2 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+p {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.section-title {
+  color: #333;
+}
+
+.section-content {
+  margin-left: 20px;
+}
+.resume-image {
+  width: 4%;
+}
+.book-image {
+  width: 8%;
+}
+
+.description-box {
+  border: 5px solid #dee5b3;
+  padding: 1px;
+  margin: 5px;
+}

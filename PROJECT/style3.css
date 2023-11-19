@@ -1,0 +1,90 @@
+/* Light Theme Styles */
+/* Increase the size of the dark mode toggle button */
+.darkmode-toggle {
+  width: 50px; /* Adjust the width as desired */
+  height: 55px; /* Adjust the height as desired */
+  font-size: 20px; /* Adjust the font size if needed */
+  position: absolute; /* Adjust the position
+  top: 20px; /* Adjust the vertical position from the top */
+  right: 20px;
+  z-index: 1; /* Ensure it's above other content */
+}
+
+body.light {
+  color: var(--text-color-light);
+  background-color: var(--bg-color-light);
+}
+
+/* Dark Theme Styles */
+body.dark {
+  color: var(--text-color-dark);
+  background-color: var(--bg-color-dark);
+}
+
+/* Style the moon and sun symbols */
+.mode-icon {
+  font-size: 20px; /* Adjust the font size as needed */
+  margin-right: 5px; /* Adjust spacing between the symbols */
+}
+
+:root {
+  --text-color-light: rgb(0, 0, 0); /* Default text color for light theme */
+  --bg-color-light: white; /* Default background color for light theme */
+  --text-color-dark: white; /* Default text color for dark theme */
+  --bg-color-dark: #222; /* Default background color for dark theme */
+}
+
+/* Default styles for larger screens */
+.container {
+  max-width: 80%;
+  margin: auto;
+  padding: 16px;
+}
+
+/* Media query for screens smaller than 768px (adjust as needed) */
+@media (max-width: 768px) {
+  /* Adjust container width and margins for smaller screens */
+  .container {
+    max-width: 90%;
+    margin: auto;
+    padding: 8px;
+  }
+
+  /* Adjust font size for smaller screens */
+  h1 {
+    font-size: 24px;
+  }
+
+  /* Adjust image size for smaller screens */
+  .blog-image {
+    width: 100%;
+  }
+
+  /* Adjust button size for smaller screens */
+  .darkmode-toggle {
+    width: 30px;
+    height: 30px;
+    font-size: 16px;
+  }
+
+  /* Adjust navbar padding for smaller screens */
+  #navbar {
+    padding: 0.5rem;
+  }
+
+  /* Adjust nav link font size for smaller screens */
+  .nav_link {
+    font-size: 16px;
+  }
+
+  /* Adjust h2 font size for smaller screens */
+  h2 {
+    font-size: 16px;
+  }
+
+  /* Adjust p font size for smaller screens */
+  p {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}

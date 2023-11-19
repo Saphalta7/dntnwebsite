@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact form</title>
+
+    <link rel="stylesheet" href="./style1.css" />
+    <link rel="stylesheet" href="./style2.css" />
+    <link rel="stylesheet" href="./style3.css" />
+    <link rel="stylesheet" href="./form.css" />
+    <script src="sheet.js"></script>
+  </head>
+  <!--Name:Saphalta Kumal
+    Semester:Fall 2023
+    -->
+  <body>
+    <nav id="navbar">
+      <ul id="nav_items">
+        <li>
+          <a href="./index.html" class="nav_link">Home</a>
+        </li>
+        <li>
+          <a href="mailto:skumal@twu.edu" class="nav_link">Contact Form</a>
+        </li>
+      </ul>
+    </nav>
+    <main>
+      <!-- Start HTML-->
+      <ul>
+        <li>
+          <button class="darkmode-toggle" onclick="toggleDarkMode()">
+            <span class="mode-icon">&#127770;</span>
+            <!-- Moon symbol -->
+            <span class="mode-icon">&#9728;</span>
+            <!-- Sun symbol -->
+            <i class="fas fa-moon"></i>
+          </button>
+        </li>
+      </ul>
+      <div class="form-container">
+        <h1>Contact Form</h1>
+        <form
+          name="contactForm"
+          method="post"
+          action="mailto:skumal@twu.edu"
+          onsubmit="return validate()"
+          action="#"
+        >
+          <label for="name">* Name</label>
+          <input type="text" id="name" name="name" placeholder="Your name" />
+          <span class="errors"></span><br />
+
+          <label for="email">* Email</label>
+          <input
+            type="text"
+            placeholder="Email address"
+            id="email"
+            name="email"
+          />
+          <span class="errors"></span><br />
+
+          <label for="phone">* Phone</label>
+          <input
+            type="text"
+            placeholder="Phone number"
+            id="phone"
+            name="phone"
+          />
+          <span class="errors"></span><br />
+
+          <label for="subject">* Message</label>
+          <textarea
+            placeholder="Your message"
+            cols="132"
+            rows="5"
+            name="subject"
+            id="subject"
+          ></textarea>
+          <span class="errors"></span><br />
+
+          <div class="btn">
+            <input type="submit" />
+          </div>
+        </form>
+      </div>
+      <!-- END  HTML -->
+    </main>
+
+    <!-- Script JS -->
+
+    <script src="sheet.js"></script>
+
+    <script src="validation.js"></script>
+  </body>
+</html>
